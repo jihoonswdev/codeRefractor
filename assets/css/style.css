@@ -1,3 +1,5 @@
+/* CSS for all site */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,39 +10,6 @@ body {
     background-color: #d9dcd6;
 }
 
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-}
-
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-    color: #d9dcd6; 
-} /*  Added color here instead of .header h1 .seo */
-
-/* .header h1 .seo {
-    color: #d9dcd6;    
-} this is not needed because default background color is #d9dcd6 */
-
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.header div ul {
-    list-style-type: none;
-}
-
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
 
 a {
     color: #ffffff;
@@ -49,8 +18,44 @@ a {
 
 p {
     font-size: 25px;
-} /* Changed font-size from 16px to 25px for better visualization */
+} 
+/* Changed font-size from 16px to 25px for better visualization */
 
+/* HEADER SECTION */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c; 
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+} /*  Added color here instead of .header h1 .seo */
+
+header h1 span {
+    color: #d9dcd6;    
+} 
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px; 
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Hero image */
 .hero {
     height: 800px;
     width: 100%;
@@ -58,6 +63,36 @@ p {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+/* Main */
+
+
+
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 30px;
+} /* Changed margin-left from 20px to 30px to align left/right side of content. */
+
+main section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+
+main section img {
+    max-height: 200px;
+    
+}
+
+main section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .float-left {
@@ -70,70 +105,9 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 30px;
-} /* Changed margin-left from 20px to 30px to align left/right side of content. */
+/* Aside */
 
-.category {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* .category {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.category {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-} */
-
-.category img {
-    max-height: 200px;
-    
-}
-
-/* .category img {
-    max-height: 200px;
-   
-}
-
-.category img {
-    max-height: 200px;
-    
-} */
-
-.category h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/* .category h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.category h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-} */
-
-.benefits {
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -144,63 +118,27 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-cat {
+aside div {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/* .benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-} *Changed 3 content into 1 to organize and have a better semantic structure.*/
-
-.benefit-cat h3 {
+aside div h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* .benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center; 
-}   
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}  *Changed 3 content into 1 to organize and have a better semantic structure.  */  
- 
-
-.benefit-cat img {
+aside div img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/* .benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+/* Footer */
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-} *Changed 3 content into 1 to organize and have a better semantic structure. */
-
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
-/* .footer h2 {
-    font-size: 20px;
-    color: black;
-} */
