@@ -18,11 +18,12 @@ body {
 .header h1 {
     display: inline-block;
     font-size: 48px;
-}
+    color: #d9dcd6; 
+} /*  Added color here instead of .header h1 .seo */
 
-.header h1 .seo {
-    color: #d9dcd6;
-}
+/* .header h1 .seo {
+    color: #d9dcd6;    
+} this is not needed because default background color is #d9dcd6 */
 
 .header div {
     padding-top: 15px;
@@ -47,8 +48,8 @@ a {
 }
 
 p {
-    font-size: 16px;
-}
+    font-size: 25px;
+} /* Changed font-size from 16px to 25px for better visualization */
 
 .hero {
     height: 800px;
@@ -72,8 +73,65 @@ p {
 .content {
     width: 75%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 30px;
+} /* Changed margin-left from 20px to 30px to align left/right side of content. */
+
+.category {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
+
+/* .category {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.category {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+} */
+
+.category img {
+    max-height: 200px;
+    
+}
+
+/* .category img {
+    max-height: 200px;
+   
+}
+
+.category img {
+    max-height: 200px;
+    
+} */
+
+.category h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* .category h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.category h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+} */
 
 .benefits {
     margin-right: 20px;
@@ -86,12 +144,12 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.benefit-cat {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
+/* .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -99,30 +157,31 @@ p {
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
-}
+} *Changed 3 content into 1 to organize and have a better semantic structure.*/
 
-.benefit-lead h3 {
+.benefit-cat h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
+/* .benefit-brand h3 {
     margin-bottom: 10px;
-    text-align: center;
-}
+    text-align: center; 
+}   
 
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
-}
+}  *Changed 3 content into 1 to organize and have a better semantic structure.  */  
+ 
 
-.benefit-lead img {
+.benefit-cat img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
+/* .benefit-brand img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -132,61 +191,7 @@ p {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+} *Changed 3 content into 1 to organize and have a better semantic structure. */
 
 .footer {
     padding: 30px;
@@ -197,4 +202,5 @@ p {
 
 .footer h2 {
     font-size: 20px;
+    color: black;
 }
