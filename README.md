@@ -4,16 +4,9 @@
 
 ## Screenshot
 
-
+![Deployed App](./assets/images/sc1.PNG)
 
 ## Links
 
 [Deployed App](https://jihoonswdev.github.io/codeRefractor/)
 
-
-
-****Delete when done
-
-1. Description of your app
-2. Screenshot of your deployed app
-3. Link to your deployed app
